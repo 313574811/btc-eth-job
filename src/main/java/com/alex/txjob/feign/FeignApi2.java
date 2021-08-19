@@ -5,10 +5,10 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name = "feignApi",url = "https://chain.api.btc.com/v3/")
+@FeignClient(name = "feignApi2",url = "https://www.baidu.com/")
 public interface FeignApi2 {
 
-    @RequestMapping(value = "block/latest/tx",method = RequestMethod.GET)
+    @RequestMapping(value = "/s?wd=aiqiyi",method = RequestMethod.GET)
     public JSONObject callBtc();
 
 //    @RequestMapping(value = "rawblock/300000",method = RequestMethod.GET)
